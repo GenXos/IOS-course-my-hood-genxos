@@ -12,6 +12,9 @@
 		5F69F56B1C35BAE000087D8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F69F5691C35BAE000087D8E /* Main.storyboard */; };
 		5F69F56D1C35BAE000087D8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F69F56C1C35BAE000087D8E /* Assets.xcassets */; };
 		5F69F5701C35BAE000087D8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F69F56E1C35BAE000087D8E /* LaunchScreen.storyboard */; };
+		5F69F5791C35C26900087D8E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F69F5781C35C26900087D8E /* Post.swift */; };
+		5F69F57C1C35D5DA00087D8E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F69F57B1C35D5DA00087D8E /* PostCell.swift */; };
+		5F69F57F1C35DFBE00087D8E /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F69F57E1C35DFBE00087D8E /* AddPostVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		5F69F56C1C35BAE000087D8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F69F56F1C35BAE000087D8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F69F5711C35BAE000087D8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F69F5781C35C26900087D8E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		5F69F57B1C35D5DA00087D8E /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		5F69F57E1C35DFBE00087D8E /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		5F69F5641C35BAE000087D8E /* my-hood-genxos */ = {
 			isa = PBXGroup;
 			children = (
+				5F69F5771C35C24E00087D8E /* Model */,
+				5F69F57A1C35D57E00087D8E /* View */,
+				5F69F57D1C35DF3400087D8E /* Controller */,
 				5F69F5651C35BAE000087D8E /* AppDelegate.swift */,
-				5F69F5671C35BAE000087D8E /* ViewController.swift */,
-				5F69F5691C35BAE000087D8E /* Main.storyboard */,
 				5F69F56C1C35BAE000087D8E /* Assets.xcassets */,
-				5F69F56E1C35BAE000087D8E /* LaunchScreen.storyboard */,
 				5F69F5711C35BAE000087D8E /* Info.plist */,
 			);
 			path = "my-hood-genxos";
+			sourceTree = "<group>";
+		};
+		5F69F5771C35C24E00087D8E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F69F5781C35C26900087D8E /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5F69F57A1C35D57E00087D8E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F69F5691C35BAE000087D8E /* Main.storyboard */,
+				5F69F56E1C35BAE000087D8E /* LaunchScreen.storyboard */,
+				5F69F57B1C35D5DA00087D8E /* PostCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5F69F57D1C35DF3400087D8E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F69F5671C35BAE000087D8E /* ViewController.swift */,
+				5F69F57E1C35DFBE00087D8E /* AddPostVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F69F5791C35C26900087D8E /* Post.swift in Sources */,
 				5F69F5681C35BAE000087D8E /* ViewController.swift in Sources */,
+				5F69F57F1C35DFBE00087D8E /* AddPostVC.swift in Sources */,
 				5F69F5661C35BAE000087D8E /* AppDelegate.swift in Sources */,
+				5F69F57C1C35D5DA00087D8E /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
