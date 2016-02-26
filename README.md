@@ -1,2 +1,2 @@
-# IOS-course-my-hood-genxos
-IOS-course-my-hood-genxos
+# my-hood
+my-hood
